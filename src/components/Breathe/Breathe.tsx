@@ -72,7 +72,7 @@ const Breathe = () => {
   };
 
   return (
-    <div className="px-10 flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600">
+    <div className="px-10 flex flex-col items-center justify-center min-h-screen ">
         <h1 className="text-xl text-white mb-8">Name: {tele?.initDataUnsafe?.user?.first_name}</h1>
         <h1 className="text-xl text-white mb-8">Username: {tele?.initDataUnsafe?.user?.username}</h1>
       <h1 className="text-4xl font-bold text-white mb-6">Breathe & Relax</h1>

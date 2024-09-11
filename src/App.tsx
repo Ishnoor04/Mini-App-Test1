@@ -56,7 +56,7 @@ const App: React.FC = () => {
 //   }, []);
 
   return (
-    <div className='min-h-screen bg-white text-black text-center flex flex-col gap-4 items-center justify-center'>
+    <div className='min-h-screen bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 text-black text-center flex flex-col gap-4 items-center justify-center'>
         {/* <h1>Name: {tele?.initDataUnsafe?.user?.first_name}</h1>
         <h1>Username: {tele?.initDataUnsafe?.user?.username}</h1>
 
