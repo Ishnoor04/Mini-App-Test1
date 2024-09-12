@@ -14,7 +14,7 @@ const Breathe = () => {
     setTimerActive(true);
     setTimeElapsed(0); // Reset time when starting
     startTime.current = Date.now();
-    tele.HapticFeedback.impactOccured("heavy");
+    
     if (!holdIntervalRef.current) {
       holdIntervalRef.current = setInterval(() => {
         if (startTime.current && Date.now() - startTime.current >= 15000) {
@@ -93,6 +93,7 @@ const Breathe = () => {
         onTouchStart={startCounter}
         onTouchEnd={stopCounter}
         onTouchCancel={handleOnMouseLeave}
+        onClick={()=>tele.HapticFeedback.impactOccured("heavy")}
         className="bg-white text-indigo-600 font-bold rounded-full h-32 w-32 flex items-center justify-center transition-all transform hover:scale-110 hover:bg-indigo-600 hover:text-white active:scale-95 active:bg-indigo-700"
       >
         Hold
