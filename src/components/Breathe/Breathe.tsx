@@ -18,6 +18,7 @@ const Breathe = () => {
     if (!holdIntervalRef.current) {
       holdIntervalRef.current = setInterval(() => {
         if (startTime.current && Date.now() - startTime.current >= 15000) {
+            tele.HapticFeedback.notificationOccurred("success")
           setRewards((prev: number) => {
             const newRewards = prev + 1;
             setItemInCloudStorage('Test_Mini_App_Rewards', newRewards.toString(), tele); 
