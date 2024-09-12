@@ -14,7 +14,7 @@ const Breathe = () => {
     setTimerActive(true);
     setTimeElapsed(0); // Reset time when starting
     startTime.current = Date.now();
-    tele.HapticFeedback.impactOccured();
+    tele.HapticFeedback.impactOccured("heavy");
     if (!holdIntervalRef.current) {
       holdIntervalRef.current = setInterval(() => {
         if (startTime.current && Date.now() - startTime.current >= 15000) {
