@@ -96,7 +96,7 @@ const Breathe = () => {
         onTouchCancel={handleOnMouseLeave}
         className="bg-white text-indigo-600 font-bold rounded-full h-32 w-32 flex items-center justify-center transition-all transform hover:scale-110 hover:bg-indigo-600 hover:text-white active:scale-95 active:bg-indigo-700"
       >
-        Hold
+        {/* Hold */}
       </button>
     </div>
   );
